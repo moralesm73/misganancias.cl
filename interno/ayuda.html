@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>Invertir | Mis Ganancias</title>
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+
+  </head>
+  <body>
+    <section id="navegacion">
+      <div class="salir d-block d-lg-none" id="esconder"><i class="fas fa-times"></i></div>
+      <div class="identificacion">
+        <p id="userName">nombre apellido apellido</p>
+        <p id="userEmail">mail@gmail.com</p>
+        <p id="userTipo">inversionista</p>
+      </div>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="invertir.html">INVERTIR</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cartola-general.html">MIS INVERSIONES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rescate-saldo.html">CUENTA CORRIENTE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="perfil.html">MI PERFIL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">AYUDA</a>
+        </li>
+        <ul class="submenu">
+          <li><a href="#" class="activo">Preguntas Frecuentes</a></li>
+          <li><a href="#">Descargar Manual</a></li>
+        </ul>
+      </ul>
+      <a href="../index.html"><p id="exit">SALIR</p></a>
+    </section>
+
+    <section id="contenido">
+      <div class="cuerpo">
+        <div class="cabecera">
+          <a href="#" role="button" class="btn btn-secondary d-block d-lg-none nuevoMenu" id="abrirMenu">Menú</a>
+          <img src="images/logo_misganancias.png" class="logo">
+          <p>PREGUNTAS FRECUENTES</p>
+        </div>
+        <div class="infoScroll">
+          <div class="row cartola">
+            <div class="col-12">
+              <div class="accordion" id="ayudaMobile">
+                <div class="card">
+                  <div class="card-header" id="ask_01_mb">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#answer_01_mb" aria-expanded="true" aria-controls="answer_01_mb">
+                        ¿Cómo puedo formar parte de Mis Ganancias?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="answer_01_mb" class="collapse show" aria-labelledby="ask_01_mb" data-parent="#ayudaMobile">
+                    <div class="card-body">
+                      Debe registrarse enviando sus datos de contacto a través de nuestro sitio en la página de inicio.<br><br>Recibirá un correo con su clave y una vez realizado el proceso de validación de sus datos, deberá aceptar los términos y condiciones del uso del sitió en el ícono correspondiente.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="ask_02_mb">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer_02_mb" aria-expanded="false" aria-controls="answer_02_mb">
+                        ¿Cuáles son los pasos para comenzar a operar?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="answer_02_mb" class="collapse" aria-labelledby="ask_02_mb" data-parent="#ayudaMobile">
+                    <div class="card-body">
+                      Una vez que el perfil de Usuario sea creado cambiará su perfil de usuario y podrá ver las oportunidades de inversión y seleccionar los documentos que se ajustan a su disponibilidad de fondos y a los plazos de su interés.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="ask_03_mb">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer_03_mb" aria-expanded="false" aria-controls="answer_03_mb">
+                        ¿Cómo es el proceso de compra de facturas?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="answer_03_mb" class="collapse" aria-labelledby="ask_03_mb" data-parent="#ayudaMobile">
+                    <div class="card-body">
+                      <ol>
+                        <li>Al ingresar a su perfil, podrá revisar cada una de las oportunidades de inversión, con sus características particulares de monto de inversión, plazo y rentabilidad esperada.</li>
+                        <li>Al realizar la elección de las facturas, estas quedarán en su carro de compras.</li>
+                        <li>Una vez terminada la selección y completado el monto que desea invertir, para finalizar la operación va a su carro de compra y da la instrucción de comprar.</li>
+                        <li>La operación se perfecciona sobre los montos que en ese momento tenga disponibles en su cuenta de Mis Ganancias.</li>
+                        <li>Recibirá un correo con la confirmación de su compra.</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="ask_04_mb">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer_04_mb" aria-expanded="false" aria-controls="answer_04_mb">
+                        ¿Qué requisitos se debe cumplir para operar en Mis Ganancias?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="answer_04_mb" class="collapse" aria-labelledby="ask_04_mb" data-parent="#ayudaMobile">
+                    <div class="card-body">
+                      <ul>
+                        <li>Ser mayor de edad.</li>
+                        <li>Tener cédula de identidad.</li>
+                        <li>Tener cuenta bancaria.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="ask_05_mb">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer_05_mb" aria-expanded="false" aria-controls="answer_05_mb">
+                        ¿Cuáles son los costos de operar en Mis Ganancias?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="answer_05_mb" class="collapse" aria-labelledby="ask_05_mb" data-parent="#ayudaMobile">
+                    <div class="card-body">
+                      Por la labor de facilitación, confirmación, cobranza y recaudación, Mis Ganancias cobrará un importe equivalente al 0,3% mensual de la rentabilidad esperada por el plazo en que la operación se encuentra activa.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="ask_06_mb">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer_06_mb" aria-expanded="false" aria-controls="answer_06_mb">
+                        ¿Cuánto puedo ganar al operar en el portal de Mis Ganancias?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="answer_06_mb" class="collapse" aria-labelledby="ask_06_mb" data-parent="#ayudaMobile">
+                    <div class="card-body">
+                      Las ganancias para los usuarios se generan por la vía de obtener una diferencia de precio entre el valor de la inversión y el monto que reciben luego de que el documento adquirido es cancelado por la empresa pagadora. Esta diferencia equivale al 1% mensual.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="ask_07_mb">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer_07_mb" aria-expanded="false" aria-controls="answer_07_mb">
+                        ¿Cómo se seleccionan las facturas que se publican?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="answer_07_mb" class="collapse" aria-labelledby="ask_07_mb" data-parent="#ayudaMobile">
+                    <div class="card-body">
+                      El equipo de Mis Ganancias realiza un exhaustivo proceso de selección, evaluación y calificación de los documentos que son publicados en el portal.<br><br>
+                      La selección de documentos para Mis Ganancias, se enfoca en las características de la empresa pagadora, de su tamaño y condición comercial y financiera, moralidad actualizada y de la historia que tenga como pagadora de facturas cedidas.<br><br>
+                      Se trata de documentos confirmados por la empresa pagadora, debidamente cedidos a través de la página del Servicio de Impuestos Internos y de acuerdo a las condiciones y normativa impuestas para estos efectos.<br><br>
+                      Todos los documentos que se publican en el portal tiene mérito ejecutivo.
+                    </div>
+                  </div>
+                </div>
+
+              <div class="card">
+                <div class="card-header" id="ask_08_mb">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer_08_mb" aria-expanded="false" aria-controls="answer_08_mb">
+                      ¿Debo hacer alguna gestión de cobranza?
+                    </button>
+                  </h5>
+                </div>
+                <div id="answer_08_mb" class="collapse" aria-labelledby="ask_08_mb" data-parent="#ayudaMobile">
+                  <div class="card-body">
+                    No, las labores de cobranza y recaudación son realizadas en su totalidad por el equipo de Mis Ganancias y constituyen uno de los pilares de la propuesta de valor, porque permiten al Usuario participar de utilidades del proceso sin la necesidad de desviar tiempo y atención en el mismo.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="ask_09_mb">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer_09_mb" aria-expanded="false" aria-controls="answer_09_mb">
+                      ¿Mis Ganancias se encarga de administrar mis fondos haciendo compras de facturas?
+                    </button>
+                  </h5>
+                </div>
+                <div id="answer_09_mb" class="collapse" aria-labelledby="ask_09_mb" data-parent="#ayudaMobile">
+                  <div class="card-body">
+                    No, el Usuario tiene acceso a toda la información de su cartera, desde los saldos vigentes, históricos y a toda la información necesaria para realizar las operaciones desde su perfil.<br><br>
+                    Cada vez que se paga una factura, el Usuario es informado por el Equipo de Mis Ganancias y recibe un correo confirmando el pago del documento.<br><br>
+                    Luego de eso recibe la liquidación de la operación y la transferencia de fondos correspondientes y con los fondos disponibles puede realizar nuevas compras en el portal.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="ask_10_mb">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer_10_mb" aria-expanded="false" aria-controls="answer_10_mb">
+                      ¿Qué pasa si una empresa pagadora no paga una factura?
+                    </button>
+                  </h5>
+                </div>
+                <div id="answer_10_mb" class="collapse" aria-labelledby="ask_10_mb" data-parent="#ayudaMobile">
+                  <div class="card-body">
+                    Las facturas disponibles en el portal pasan por un estricto proceso de validación antes de ser seleccionadas y publicadas, es por esta razón que la frecuencia esperada para la ocurrencia de un evento de esta naturaleza es muy baja.<br><br>
+                    Si a pesar de lo anterior, se produce una morosidad, Mis Ganancias realiza gestiones de cobranza a la empresa pagadora y a la empresa que cedió la factura, con esta última existen líneas de financiamiento que permiten obtener fuentes de pago complementarias. Se hacen efectivas las garantías que para cada caso particular existan.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="ask_11_mb">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer_11_mb" aria-expanded="false" aria-controls="answer_11_mb">
+                      ¿Qué información me entrega el sistema?
+                    </button>
+                  </h5>
+                </div>
+                <div id="answer_11_mb" class="collapse" aria-labelledby="ask_11_mb" data-parent="#ayudaMobile">
+                  <div class="card-body">
+                    La plataforma le entrega información actualizada de sus compras durante el mes en curso, de los vencimientos y rentabilidad esperada de su cartera. Adicionalmente el portal le permite seleccionar datos históricos por mes o períodos de tiempo a elección de cada usuario.<br><br>
+                    Por otra parte el sistema genera correos electrónicos como respaldo de las operaciones de compra, liquidación de facturas y solicitud de rescate.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $('#abrirMenu').click(function(){
+        $('#navegacion').addClass('move');
+      });
+
+      $('#esconder').click(function(){
+        $('#navegacion').removeClass('move');
+      });
+    </script>
+  </body>
+</html>

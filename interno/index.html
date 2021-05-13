@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>Home | Mis Ganancias</title>
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+
+  </head>
+  <body>
+    <section id="navegacion">
+      <div class="salir d-block d-lg-none" id="esconder"><i class="fas fa-times"></i></div>
+      <div class="identificacion">
+        <p id="userName">nombre apellido apellido</p>
+        <p id="userEmail">mail@gmail.com</p>
+        <p id="userTipo">inversionista</p>
+      </div>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="invertir.html">INVERTIR</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cartola-general.html">MIS INVERSIONES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rescate-saldo.html">CUENTA CORRIENTE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="perfil.html">MI PERFIL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ayuda.html">AYUDA</a>
+        </li>
+      </ul>
+      <a href="../index.html"><p id="exit">SALIR</p></a>
+    </section>
+
+    <section id="contenido">
+      <div class="cuerpo">
+        <div class="cabecera">
+          <a href="#" role="button" class="btn btn-secondary d-block d-lg-none nuevoMenu" id="abrirMenu">Menú</a>
+          <img src="images/logo_misganancias.png" class="logo">
+          <p>BIENVENIDO A MIS GANANCIAS</p>
+        </div>
+        <div class="infoScroll">
+          <img src="images/interno-cliente-1.jpg" class="img-fluid">
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $('#abrirMenu').click(function(){
+        $('#navegacion').addClass('move');
+      });
+
+      $('#esconder').click(function(){
+        $('#navegacion').removeClass('move');
+      });
+    </script>
+  </body>
+</html>

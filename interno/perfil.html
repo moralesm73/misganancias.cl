@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>Invertir | Mis Ganancias</title>
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+
+  </head>
+  <body>
+    <section id="navegacion">
+      <div class="salir d-block d-lg-none" id="esconder"><i class="fas fa-times"></i></div>
+      <div class="identificacion">
+        <p id="userName">nombre apellido apellido</p>
+        <p id="userEmail">mail@gmail.com</p>
+        <p id="userTipo">inversionista</p>
+      </div>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="invertir.html">INVERTIR</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cartola-general.html">MIS INVERSIONES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rescate-saldo.html">CUENTA CORRIENTE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">MI PERFIL</a>
+        </li>
+        <ul class="submenu">
+          <li><a href="#" class="activo">Editar</a></li>
+          <li><a href="cambiar-clave.html">Cambiar Clave</a></li>
+        </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="ayuda.html">AYUDA</a>
+        </li>
+      </ul>
+      <a href="../index.html"><p id="exit">SALIR</p></a>
+    </section>
+
+    <section id="contenido">
+      <div class="cuerpo">
+        <div class="cabecera">
+          <a href="#" role="button" class="btn btn-secondary d-block d-lg-none nuevoMenu" id="abrirMenu">Menú</a>
+          <img src="images/logo_misganancias.png" class="logo">
+          <p>MI PERFIL</p>
+        </div>
+        <div class="infoScroll">
+          <div class="row cartola">
+            <div class="col-12">
+              <p class="titulo">DATOS PERSONALES</p>
+              <form>
+                <div class="form-row">
+                  <div class="col-12 col-sm-6 col-md-4 form-group">
+                    <label for="nombre">Nombre o Razón Social</label>
+                    <input type="text" id="nombre" class="form-control" name="nombre" value="Prueba">
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 form-group">
+                    <label for="apaterno">Apellido Paterno</label>
+                    <input type="text" id="apaterno" class="form-control" name="apaterno" value="Prueba">
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 form-group">
+                    <label for="amaterno">Apellido Materno</label>
+                    <input type="text" id="amaterno" class="form-control" name="amaterno" value="Prueba">
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 form-group">
+                    <label for="rut">Rut (sin puntos)</label>
+                    <input type="text" id="rut" class="form-control" name="rut" value="12345678-5">
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 form-group">
+                    <label for="email">Correo</label>
+                    <input type="email" id="email" class="form-control" name="email" value="prueba@prueba.cl">
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 form-group">
+                    <label for="perfil">Perfil</label>
+                    <input type="text" id="perfil" class="form-control" name="perfil" value="Inversionista">
+                  </div>
+                  <div class="col-12">
+                    <button type="button" class="btn btn-secondary">Actualizar</button>
+                  </div>
+                </div>
+              </form>
+
+              <p class="titulo mt-5">DIRECCIÓN</p>
+              <form>
+                <div class="form-row">
+                  <div class="col-12 col-sm-6 form-group">
+                    <label for="region">Región</label>
+                    <select id="region" class="form-control">
+                      <option selected="selected" value="-1">Seleccione</option>
+                      <option value="1">Región de Tarapacá</option>
+                      <option value="2">Región de Antofagasta</option>
+                      <option value="3">Región de Atacama</option>
+                      <option value="4">Región de Coquimbo</option>
+                      <option value="5">Región de Valparaiso</option>
+                      <option value="6">Región del Libertador General Bernardo O Higgins</option>
+                      <option value="7">Región del Maule</option>
+                      <option value="8">Región del Bío-Bío</option>
+                      <option value="9">Región de la Araucanía</option>
+                      <option value="10">Región de Los Lagos</option>
+                      <option value="11">Región de Aysén del Gral Carlos Ibáñez del Campo</option>
+                      <option value="12">Región de Magallanes y la Antártica Chilena</option>
+                      <option value="13">Región Metropolitana</option>
+                      <option value="14">Región de Los Ríos</option>
+                      <option value="15">Región de Arica y Parinacota</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-sm-6 form-group">
+                    <label for="comuna">Comuna</label>
+                    <select id="comuna" class="form-control">
+                      <option selected="selected" value="-1">Seleccione</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-sm-6 form-group">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" class="form-control" name="direccion">
+                  </div>
+                  <div class="col-12 col-sm-6 form-group">
+                    <label for="referencia">Referencia</label>
+                    <input type="text" id="referencia" class="form-control" name="referencia">
+                  </div>
+                  <div class="col-12">
+                    <button type="button" class="btn btn-secondary">Agregar</button>
+                  </div>
+                </div>
+              </form>
+
+              <p class="titulo mt-5">REPRESENTANTE LEGAL</p>
+              <form>
+                <div class="form-row">
+                  <div class="col-12 col-sm-6 col-md-4 form-group">
+                    <label for="nombreR">Nombre</label>
+                    <input type="text" id="nombreR" class="form-control" name="nombreR">
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 form-group">
+                    <label for="rutR">Rut (sin puntos)</label>
+                    <input type="text" id="rutR" class="form-control" name="rutR">
+                  </div>
+                  <div class="col-12">
+                    <button type="button" class="btn btn-secondary">Agregar</button>
+                  </div>
+                </div>
+              </form>
+
+              <p class="titulo mt-5">SOCIOS</p>
+              <form>
+                <div class="form-row">
+                  <div class="col-12 col-sm-6 col-md-4 form-group">
+                    <label for="nombreS">Nombre</label>
+                    <input type="text" id="nombreS" class="form-control" name="nombreS">
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 form-group">
+                    <label for="rutS">Rut (sin puntos)</label>
+                    <input type="text" id="rutS" class="form-control" name="rutS">
+                  </div>
+                  <div class="col-12">
+                    <button type="button" class="btn btn-secondary">Agregar</button>
+                  </div>
+                </div>
+              </form>
+
+              <p class="titulo mt-5">CUENTA BANCARIA</p>
+              <form>
+                <div class="form-row">
+                  <div class="col-12 col-sm-6 col-md-4 form-group">
+                    <label for="banco">Banco</label>
+                    <select id="banco" class="form-control">
+                      <option value="-1">Seleccione</option>
+                      <option value="1164">Banco Santander</option>
+                      <option value="1165">Banco de Chile</option>
+                      <option value="1186">Banco BCI</option>
+                      <option value="1187">Banco del Estado</option>
+                      <option value="1188">Banco Itau</option>
+                      <option value="1189">Banco Corpbanca</option>
+                      <option value="1190">Banco BICE</option>
+                      <option value="1191">Banco Consorcio</option>
+                      <option value="1192">Banco Falabella</option>
+                      <option value="1193">Banco Ripley</option>
+                      <option value="1194">Banco Security</option>
+                      <option value="1195">Banco Scotiabank</option>
+                      <option value="1205">Banco BCI Nova</option>
+                      <option value="1206">Banco HSBC</option>
+                      <option value="1207">Banco Condell</option>
+                      <option value="1208">Banco BBVA</option>
+                      <option value="1209">Banco BTG Pactual Chile</option>
+                      <option value="1210">Banco Edwards Citi</option>
+                      <option value="1211">Banco CrediChile</option>
+                      <option value="1212">Banco Santander Banefe</option>
+                      <option value="1213">Banco Internacional</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 form-group">
+                    <label for="cuenta">Cuenta</label>
+                    <input type="text" id="cuenta" class="form-control" name="cuenta">
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 form-group">
+                    <label for="tipoCuenta">Tipo Cuenta</label>
+                    <select id="tipoCuenta" class="form-control">
+                      <option value="-1">Seleccione</option>
+                      <option value="1166">Cuenta Corriente</option>
+                      <option value="1167">Cuenta Vista</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <button type="button" class="btn btn-secondary">Agregar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $('#abrirMenu').click(function(){
+        $('#navegacion').addClass('move');
+      });
+
+      $('#esconder').click(function(){
+        $('#navegacion').removeClass('move');
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Como Funciona | Mis Ganancias</title>
+
+    <link rel="stylesheet" type="text/css" href="lightview-3.5.1/css/lightview/lightview.css"/>
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="lightview-3.5.1/js/excanvas/excanvas.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="lightview-3.5.1/js/spinners/spinners.min.js"></script>
+    <script type="text/javascript" src="lightview-3.5.1/js/lightview/lightview.js"></script>
+  </head>
+  <body>
+    <section>
+      <!-- Just an image -->
+      <nav id="menu" class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo_misganancias.png" height="130" alt="">
+        </a>
+
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quienes-somos.html">QUIÉNES SOMOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="como-funciona.html">¿CÓMO FUNCIONA?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">AYUDA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">CONTACTO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link sesion" href="#" data-toggle="modal" data-target="#ingresar"><i class="far fa-user-circle"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- Modal Ingreso -->
+    <div class="modal fade" id="ingresar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h5 class="modal-title text-center" id="exampleModalLabel">Ingresar</h5><br>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="usuario" placeholder="Correo Electrónico">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="password" placeholder="Contraseña">
+              </div>
+              <a href="#"><p class="text-center">¿Olvidó su contraseña?</p></a>
+              <button type="submit" class="btn btn-primary btn-ingresar">Ingresar</button>
+            </form>
+            <br>
+          </div>
+          <div class="modal-footer">
+            <p class="text-center">¿No tiene una cuenta? <a href="#">Registrarse</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="Principal" class="ayuda">
+      <img src="images/ayuda_banner_ppal.jpg">
+      <div class="cuadro_ppal">
+        <div class="conTexto">
+          <img src="images/ico_ayuda.png" class="ico_ayuda">
+          <p class="text-justify">
+            En MisGanancias no queremos que te quedes con dudas; por eso preparamos una serie de preguntas y respuestas frecuentes que suelen hacernos.<br><br>
+            Si esta sección no satisface tus consultas, siempre está la opción de escribirnos en nuestro formulario de contacto.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="FAQs">
+      <div class="container">
+        <div class="accordion" id="acordionFAQs">
+          <div class="card">
+            <div class="card-header" id="ask1">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#answer1" aria-expanded="true" aria-controls="answer1">
+                  <i class="fas fa-plus-square"></i> ¿Cómo puedo formar parte de Mis Ganancias?
+                </button>
+              </h5>
+            </div>
+            <div id="answer1" class="collapse show" aria-labelledby="ask1" data-parent="#acordionFAQs">
+              <div class="card-body">
+                Debe registrarse enviando sus datos de contacto a través de nuestro sitio en la página de inicio. Recibirá un correo con su clave y una vez realizado el proceso de validación de sus datos, deberá aceptar los términos y condiciones del uso del sitió en el ícono correspondiente. Posteriormente un ejecutivo de Mis Ganancias lo visitará para explicarle el funcionamiento del sistema y firmar el contrato de comprador.
+              </div>
+            </div>
+
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="ask2">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer2" aria-expanded="false" aria-controls="answer2">
+                  <i class="fas fa-plus-square"></i> ¿Cuáles son los pasos para comenzar a operar?
+                </button>
+              </h5>
+            </div>
+            <div id="answer2" class="collapse" aria-labelledby="ask2" data-parent="#acordionFAQs">
+              <div class="card-body">
+                Una vez que el perfil de Usuario sea creado en el portal, podrá ver las oportunidades de inversión y seleccionar los documentos que se ajustan a su disponibilidad de fondos y a los plazos de su interés.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="ask3">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer3" aria-expanded="false" aria-controls="answer3">
+                  <i class="fas fa-plus-square"></i> ¿Cómo es el proceso de compra de facturas?
+                </button>
+              </h5>
+            </div>
+            <div id="answer3" class="collapse" aria-labelledby="ask3" data-parent="#acordionFAQs">
+              <div class="card-body">
+                <ol>
+                  <li>Al ingresar a su perfil, podrá revisar cada una de las oportunidades de inversión, con sus características particulares de monto de inversión, plazo y rentabilidad esperada.</li>
+                  <li>Al realizar la elección de las facturas, estas quedarán en su carro de compras.</li>
+                  <li>Una vez terminada la selección y completado el monto que desea adquirir, finaliza la compra.</li>
+                  <li>Recibirá un correo con la confirmación de su compra.</li>
+                  <li>Finalizado el proceso está en condiciones de realizar la transferencia de fondos.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="ask4">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer4" aria-expanded="false" aria-controls="answer4">
+                  <i class="fas fa-plus-square"></i> ¿Qué requisitos se debe cumplir para operar en Mis Ganancias?
+                </button>
+              </h5>
+            </div>
+            <div id="answer4" class="collapse" aria-labelledby="ask4" data-parent="#acordionFAQs">
+              <div class="card-body">
+                <ul>
+                  <li>Ser mayor de edad.</li>
+                  <li>Tener cédula de identidad.</li>
+                  <li>Tener cuenta bancaria.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="ask5">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer5" aria-expanded="false" aria-controls="answer5">
+                  <i class="fas fa-plus-square"></i> ¿Cuáles son los costos de operar en Mis Ganancias?
+                </button>
+              </h5>
+            </div>
+            <div id="answer5" class="collapse" aria-labelledby="ask5" data-parent="#acordionFAQs">
+              <div class="card-body">
+                Por la labor de facilitación, confirmación, cobranza y recaudación, Mis Ganancias cobrará un importe equivalente al 0,3% mensual de la rentabilidad esperada por el plazo en que la operación se encuentra activa.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="ask6">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer6" aria-expanded="false" aria-controls="answer6">
+                  <i class="fas fa-plus-square"></i> ¿Cuánto puedo ganar al operar en el portal de Mis Ganancias?
+                </button>
+              </h5>
+            </div>
+            <div id="answer6" class="collapse" aria-labelledby="ask6" data-parent="#acordionFAQs">
+              <div class="card-body">
+                Las ganancias para los usuarios se generan por la vía de obtener una diferencia de precio entre el valor de la inversión y el monto que reciben luego de que el documento adquirido es cancelado por la empresa pagadora. Esta diferencia equivale al 1% mensual.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="ask7">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer7" aria-expanded="false" aria-controls="answer7">
+                  <i class="fas fa-plus-square"></i> ¿Cómo se seleccionan las facturas que se publican?
+                </button>
+              </h5>
+            </div>
+            <div id="answer7" class="collapse" aria-labelledby="ask7" data-parent="#acordionFAQs">
+              <div class="card-body">
+                El equipo de Mis Ganancias realiza un exhaustivo proceso de selección, evaluación y calificación de los documentos que son publicados en el portal.<br>
+                La selección de documentos para Mis Ganancias, se enfoca en las características de la empresa pagadora, de su tamaño y condición comercial y financiera, moralidad actualizada y de la historia que tenga como pagadora de facturas cedidas.<br>
+                Se trata de documentos confirmados por la empresa pagadora, debidamente cedidos a través de la página del Servicio de Impuestos Internos y de acuerdo a las condiciones y normativa impuestas para estos efectos. 
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="ask8">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer8" aria-expanded="false" aria-controls="answer8">
+                  <i class="fas fa-plus-square"></i> ¿Debo hacer alguna gestión de cobranza?
+                </button>
+              </h5>
+            </div>
+            <div id="answer8" class="collapse" aria-labelledby="ask8" data-parent="#acordionFAQs">
+              <div class="card-body">
+                No, las labores de cobranza y recaudación son realizadas en su totalidad por el equipo de Mis Ganancias y constituyen uno de los pilares de la propuesta de valor, porque permiten al Usuario participar de utilidades del proceso sin la necesidad de desviar tiempo y atención en el mismo.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="ask9">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer9" aria-expanded="false" aria-controls="answer9">
+                  <i class="fas fa-plus-square"></i> ¿Mis Ganancias se encarga de asministrar mis fondos haciendo compras de facturas?
+                </button>
+              </h5>
+            </div>
+            <div id="answer9" class="collapse" aria-labelledby="ask9" data-parent="#acordionFAQs">
+              <div class="card-body">
+                No, el Usuario tiene acceso a toda la información de su cartera, desde los saldos vigentes, históricos y a toda la información necesaria para realizar las operaciones desde su perfil.<br>
+                Cada vez que se paga una factura, el Usuario es informado por el Equipo de Mis Ganancias y recibe un correo confirmando el pago del documento.<br>
+                Luego de eso recibe la liquidación de la operación y la transferencia de fondos correspondientes y con los fondos disponibles puede realizar nuevas compras en el portal. 
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="ask10">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer10" aria-expanded="false" aria-controls="answer10">
+                  <i class="fas fa-plus-square"></i> ¿Qué pasa si una empresa pagadora no paga una factura?
+                </button>
+              </h5>
+            </div>
+            <div id="answer10" class="collapse" aria-labelledby="ask10" data-parent="#acordionFAQs">
+              <div class="card-body">
+                Las facturas disponibles en el portal pasan por un estricto proceso de validación antes de ser seleccionadas y publicadas, es por esta razón que la frecuencia esperada para la ocurrencia de un evento de esta naturaleza es muy baja.<br>
+                Si a pesar de lo anterior, se produce una morosidad, Mis Ganancias realiza gestiones de cobranza a la empresa pagadora y a la empresa que cedió la factura, con esta última existen líneas de financiamiento que permiten obtener fuentes de pago complementarias. Se hacen efectivas las garantías que para cada caso particular existan.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+          <div class="card-header" id="ask11">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer11" aria-expanded="false" aria-controls="answer11">
+                <i class="fas fa-plus-square"></i> ¿Qué información me entrega el sistema?
+              </button>
+            </h5>
+          </div>
+          <div id="answer11" class="collapse" aria-labelledby="ask11" data-parent="#acordionFAQs">
+            <div class="card-body">
+              La plataforma le entrega información actualizada de sus compras durante el mes en curso, de los vencimientos y rentabilidad esperada de su cartera. Adicionalmente el portal le permite seleccionar datos históricos por mes o períodos de tiempo a elección de cada usuario.
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="Inferior" class="ayuda">
+      <div class="mensaje">
+        <b>ENTREGANDO</b> CONFIANZA
+      </div>
+    </section>
+
+    <footer>
+      <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo_misganancias_blanco.png" height="80" alt="">
+        </a>
+
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

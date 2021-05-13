@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>Cartola General | Mis Ganancias</title>
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+
+  </head>
+  <body>
+    <section id="navegacion">
+      <div class="salir d-block d-lg-none" id="esconder"><i class="fas fa-times"></i></div>
+      <div class="identificacion">
+        <p id="userName">nombre apellido apellido</p>
+        <p id="userEmail">mail@gmail.com</p>
+        <p id="userTipo">inversionista</p>
+      </div>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="invertir.html">INVERTIR</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">MIS INVERSIONES</a>
+        </li>
+        <ul class="submenu">
+          <li><a href="#" class="activo">Cartola General</a></li>
+          <li><a href="documentos-pagados.html">Documentos Pagados</a></li>
+        </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="rescate-saldo.html">CUENTA CORRIENTE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="perfil.html">MI PERFIL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ayuda.html">AYUDA</a>
+        </li>
+      </ul>
+      <a href="../index.html"><p id="exit">SALIR</p></a>
+    </section>
+
+    <section id="contenido">
+      <div class="cuerpo">
+        <div class="cabecera">
+          <a href="#" role="button" class="btn btn-secondary d-block d-lg-none nuevoMenu" id="abrirMenu">Menú</a>
+          <img src="images/logo_misganancias.png" class="logo">
+          <p>CARTOLA GENERAL DE INVERSIONES</p>
+        </div>
+        <div class="infoScroll">
+          <div class="row cartola">
+            <div class="col-12">
+              <p class="titulo">CRITERIOS DE BÚSQUEDA</p>
+              <form>
+                <div class="form-row">
+                  <div class="col-12 col-sm-6 col-md-4 col-xl-3 form-group">
+                    <label for="fechaDesde">Fecha desde</label>
+                    <input type="date" id="fechaDesde" class="form-control" name="fechaDesde">
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 col-xl-3 form-group">
+                    <label for="fechaHasta">Fecha hasta</label>
+                    <input type="date" id="fechaHasta" class="form-control" name="fechaHasta">
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 col-xl-3 form-group">
+                    <label for="estado">Estado</label>
+                    <select id="estado" class="form-control">
+                      <option selected="">Todos</option>
+                      <option>Vigentes</option>
+                      <option>En Cobro</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 col-xl-3 form-group">
+                    <label for="cantidad">Cantidad de Registros</label>
+                    <select id="cantidad" class="form-control">
+                      <option selected="">20</option>
+                      <option>50</option>
+                      <option>100</option>
+                      <option>Todos</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-secondary">Buscar</button>
+                      <button type="button" class="btn btn-secondary">Imprimir</button>
+                      <button type="button" class="btn btn-secondary">Exportar a Excel</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <p class="titulo mt-5">DATOS INVERSIONISTA</p>
+              <div class="row">
+                <div class="col-12 col-sm-6 col-xl-3">
+                  <p><b>R.U.T</b><br>12345678-5</p>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3">
+                  <p><b>Nombre</b><br>Nombre Apellido Apellido</p>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3">
+                  <p><b>Email</b><br>prueba@prueba.cl</p>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3">
+                  <p><b>Teléfono</b><br>32654978</p>
+                </div>
+              </div>
+              <p class="titulo mt-5">RESUMEN DE INVERSIONES HISTÓRICAS</p>
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                  <p><b>Total Inversión</b></p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                  <p><b>Inversión Vigente</b></p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                  <p><b>Utilidad Vigente Esperada</b></p>
+                </div>
+              </div>
+              <p class="titulo mt-5">RESUMEN DE INVERSIONES POR CRITERIO DE BÚSQUEDA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $('#abrirMenu').click(function(){
+        $('#navegacion').addClass('move');
+      });
+
+      $('#esconder').click(function(){
+        $('#navegacion').removeClass('move');
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Como Funciona | Mis Ganancias</title>
+
+    <link rel="stylesheet" type="text/css" href="lightview-3.5.1/css/lightview/lightview.css"/>
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="lightview-3.5.1/js/excanvas/excanvas.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="lightview-3.5.1/js/spinners/spinners.min.js"></script>
+    <script type="text/javascript" src="lightview-3.5.1/js/lightview/lightview.js"></script>
+  </head>
+  <body>
+    <section>
+      <!-- Just an image -->
+      <nav id="menu" class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo_misganancias.png" height="130" alt="">
+        </a>
+
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quienes-somos.html">QUIÉNES SOMOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="como-funciona.html">¿CÓMO FUNCIONA?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ayuda.html">AYUDA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">CONTACTO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link sesion" href="#" data-toggle="modal" data-target="#ingresar"><i class="far fa-user-circle"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- Modal Ingreso -->
+    <div class="modal fade" id="ingresar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h5 class="modal-title text-center" id="exampleModalLabel">Ingresar</h5><br>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="usuario" placeholder="Correo Electrónico">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="password" placeholder="Contraseña">
+              </div>
+              <a href="#"><p class="text-center">¿Olvidó su contraseña?</p></a>
+              <button type="submit" class="btn btn-primary btn-ingresar">Ingresar</button>
+            </form>
+            <br>
+          </div>
+          <div class="modal-footer">
+            <p class="text-center">¿No tiene una cuenta? <a href="#">Registrarse</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="Principal" class="contacto">
+      <img src="images/contacto_banner_ppal.jpg">
+      <div class="cuadro_ppal">
+        <div class="conTexto">
+          <p class="text-justify">
+            Av. Libertador Bernardo O'Higgins 1316<br>
+            Oficina 73 - Santiago, Chile<br>
+            Teléfono: +56 2 3221 1421<br>
+            Email: contacto@misganancias.cl
+          </p>
+          <img src="images/ico_contacto.png" class="ico_ayuda">
+          <p class="text-justify">
+            Utiliza el siguiente formulario para dejarnos tus dudas y comentarios pertinentes.<br><br>
+            También siéntete libre de visitar nuestras oficinas, cuando lo necesites.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Formulario">
+      <div class="container">
+        <form action="gracias.html" class="row">
+          <div class="col-12 col-md-6">
+            <div class="form-group">
+              <input type="text" class="form-control left" id="nombre" name="nombre" placeholder="Nombre*">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control left" id="run" name="run" placeholder="RUN*">
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="form-group">
+              <input type="text" class="form-control left" id="apellido" name="apellido" placeholder="Apellido*">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control left" id="email" name="email" placeholder="Email*">
+            </div>
+          </div>
+          <div class="col-12 col-md-12">
+            <div class="form-group">
+              <textarea aria-required="true" name="mensaje" id="mensaje" class="form-control" placeholder="Mensaje"></textarea>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="col-sm-12 text-center margin-top">
+            <button type="submit" class="btn btn-primary enviar">ENVIAR</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- SECCIÓN MAPA -->
+    <section>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.15520295842!2d-70.65653488480082!3d-33.44526278077537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5f4bd7e9f2b%3A0x89e0a02ce263dd!2sAv+Libertador+Bernardo+O&#39;Higgins+1316%2C+Santiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses-419!2scl!4v1547346888428" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+
+    <section id="Inferior" class="contacto">
+      <div class="mensaje">
+        <b>POTENCIA</b> TUS INVERSIONES
+      </div>
+    </section>
+
+    <footer>
+      <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo_misganancias_blanco.png" height="80" alt="">
+        </a>
+
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

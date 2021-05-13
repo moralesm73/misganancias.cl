@@ -1,0 +1,97 @@
+/*================== GENERALES ==================*/
+html,body{font-family: 'Montserrat', sans-serif;font-weight: 400;overflow-x: hidden;color: #000;font-size: 14px;background-color: #d3cdbf;height: 100%;width: 100%;}
+.acentuar{color:#87764c;}
+
+
+#navegacion{position: fixed;background-color: #000;width: 360px;left: 0;top:0;height: 100%;color: #fff;padding:5rem 2rem;z-index: 50;}
+.identificacion{border-bottom: 4px solid #8b6a23;padding-bottom: 3rem;padding-left: 5%;padding-right: 5%;margin-bottom: 5rem;}
+.identificacion p{margin-bottom:0;}
+.identificacion p#userName{text-transform: uppercase;font-weight: 700;}
+.identificacion p#userEmail{font-weight: 600;}
+.identificacion p#userTipo{text-transform: uppercase;font-weight: 700;}
+.submenu{list-style: none;padding-left: 5rem;}
+.submenu li{padding:5px 0;}
+.submenu li a{font-size:1.1rem;color: #fff;text-decoration: none;}
+.submenu li a.activo{font-weight: 700;}
+
+
+.nav .nav-item{margin-left: -2rem;margin-right: -2rem;}
+.nav .nav-item .nav-link{padding: .5rem 3rem;font-size: 1.3rem;color: #fff;}
+.nav .nav-item .nav-link.active{background: #d3cdbf;color: #fff;font-weight: 600;color: #8b6a23;}
+#exit{font-size: 1.3rem;color: #fff;position: absolute;bottom: 4rem;line-height: 2.5;border-bottom: 2px solid #fff;padding: 0 8px;}
+
+
+#contenido{position: relative;width: 100%;padding-left: 360px;height: 100%;}
+#contenido .cuerpo{padding:3% 4% 0;height: 100%;position: relative;}
+#contenido .cabecera{margin-bottom: 2%;}
+#contenido .cabecera .logo{height: 125px;}
+#contenido .cabecera p{float:right;color: #000;font-weight: 700;margin: 1.5% 0 0;font-size: 1.2rem;}
+#contenido .infoScroll{width: 100%;height: 75%;overflow-x: hidden;overflow-y: auto;position: relative;}
+
+.facturas div a{text-decoration: none;}
+.facturas div{margin-bottom: 30px;}
+.facturas p{margin-bottom: 0;}
+.facturas .titulo{text-align: center;color: #fff;background: #000;font-weight: 600;padding: 5px 0;}
+.facturas .id_cliente{text-align: center;color:#87764c;background-color: #fff;padding: 10px 0;}
+.facturas .monto{background-color: #f1f0ec;padding: 10px 0;text-align: center;}
+.facturas .inversion{font-weight: 500;text-align: center;font-size: 1.1rem;color: #000;background-color: #fff;padding: 10px 0;}
+.facturas .utilidad{padding: 5px 0;width: 100%;background-color: #f1f0ec;padding: 10px 0;}
+.facturas .utilidad td{width: 50%;text-align: center;}
+.facturas .oportunidad{text-align:center;background-color: #fff;padding: 10px 0;color:#000;font-weight: 600;}
+.facturas .carro{background-color:#87764c;text-align: center;color:#fff;font-size: 1.1rem;padding: 10px 0;font-weight: 600;}
+
+.cartola .titulo{background:#f1f0ec;font-weight: 700;color: #000;padding: 10px;}
+.cartola .border{border:1px solid #000 !important;}
+.cartola .form-control{background:transparent;color:#000;border-radius: 0;border:2px solid #000 !important;}
+.cartola .saldo{font-weight: 700;color: #000;padding: 10px;}
+.cartola thead{background:#f1f0ec;}
+.cartola .table th, .cartola .table td {vertical-align: middle;}
+
+.card-header {background:#f1f0ec;font-weight: 700;color: #000;padding: 10px;border-radius: 0;}
+.card-header button{text-decoration: none;font-weight: 700;color: #000;padding:0;}
+.card-body {background:transparent;border-radius: 0;}
+.card{background:transparent;border:none;border-radius: 0;}
+.collapse{background:transparent;}
+
+.oportunidad .claro{background:#fff;}
+.oportunidad .oscuro{background:#f1f0ec;}
+.saltar{display: none;}
+
+@media (min-width: 1200px) and (max-width: 1500px){
+	html,body{font-size: 13px;}
+	#navegacion {width: 315px;padding: 4rem 2rem;}
+	#exit {bottom: 3rem;}
+	#contenido {padding-left: 315px;}
+	#contenido .cabecera .logo {height: 110px;}
+}
+@media (min-width: 992px) and (max-width: 1199px){
+	html,body{font-size: 12px;}
+	#navegacion {width: 290px;padding: 4rem 2rem;}
+	#exit {bottom: 3rem;}
+	#contenido {padding-left: 290px;}
+	#contenido .cabecera .logo {height: 110px;}
+}
+
+@media (max-width: 1400px){
+	.saltar{display: block;}
+}
+
+@media(max-width: 991px){
+	html,body{font-size: 12px;}
+	.identificacion{margin-bottom: 3rem;padding-bottom: 3rem;}
+	.identificacion p{font-size: .9rem;}
+	#exit{font-size: 1.1rem;}
+	.nav .nav-item .nav-link{font-size: 1.1rem;}
+	#navegacion {width: 250px;padding: 4rem 2rem;margin-left: -315px;-webkit-transition: all .3s ease;-moz-transition: all .3s ease;-o-transition: all .3s ease;-ms-transition: all .3s ease;transition: all .3s ease;}
+	#navegacion.move{margin-left: 0px !important;}
+	#contenido {padding-left: 0px;}
+	.salir{position:absolute;top: 8px;right: 8px;font-size: 2rem;line-height: 1;cursor: pointer;}
+	.nuevoMenu{float: left;padding: 1rem 2rem;margin-top: 46px;margin-right: 14px;font-weight: 700;text-transform: uppercase;}
+	#contenido .cabecera .logo {height: 100px;}
+	#contenido .cabecera p {margin: 5.5% 0 0;font-size: 1.1rem;}
+}
+
+@media(max-width: 575px){
+	.oportunidad .cliente{text-align: center;}
+	#exit{font-size: 1.1rem;bottom: 1rem;}
+}
